@@ -3,10 +3,20 @@
 #include <stdio.h>
 
 int main() {
-  char numero[4];
+  int numero, numero_revertido = 0;
+  
+  printf("Digite o número para reverter: ");    
+  scanf("%d", &numero);
 
-  printf("Insira o número: ");
-  numero = getchar();
+  while (!numero) {
+    
+    numero_revertido = numero_revertido * 10;
+    
+    numero_revertido = numero_revertido + numero % 10;
+    
+    numero = numero / 10;
+  }
 
-  printf("Número recebido: %s \nNúmero invertido: %s", numero, strrev(str));
+  printf("O número digitado foi: %d \nEle invertido é: %d", numero, numero_revertido);    
+  return 0;
 }
