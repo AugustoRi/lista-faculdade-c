@@ -5,5 +5,13 @@
 #include <stdio.h>
 
 int main() {
-  
+  int x, n;
+
+  printf("Insira o número x: ");
+  scanf("%d", &x);
+
+  printf("Insira o número n: ");
+  scanf("%d", &n);
+
+  printf("O resultado é: %d\n", x << n);
 }
