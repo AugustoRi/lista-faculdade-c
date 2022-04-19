@@ -9,3 +9,8 @@ do seu voto. No final da eleição o programa deve emitir um relatório contendo
 votação de cada candidato, votos em branco, votos nulos e o candidato eleito. Obs.: O codigo para
 finalizar a urna (votação) é o usuário digitar algum número negativo.
 */
+
+int main() {
+  unsigned char teste;
+  printf("%c", teste);
+}
