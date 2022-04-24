@@ -17,7 +17,6 @@ int main () {
   printf("8 ^ %d = ", x);
 
   printf("%.0lf\n", pow(3, (double)x));
-        /*
-  */
+  
   return 0;
 }
