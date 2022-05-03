@@ -1,6 +1,6 @@
 /*
-5. Fa ̧ca um programa em C que concatene duas strings recebidas pelo usu ́ario. Construa uma vers ̃ao
-com uso da fun ̧c ̃ao strcat() e outra sem.
+5. Faça um programa em C que concatene duas strings recebidas pelo usuário.
+Construa uma versão com uso da função strcat() e outra sem.
 */
 
 #include <stdio.h>
@@ -11,6 +11,7 @@ com uso da fun ̧c ̃ao strcat() e outra sem.
 int main() {
   char str_cat1[TAM], str_cat2[TAM], str1[TAM], str2[TAM];
   int i = 0, j = 0;
+  
   //usando strcat()
   printf("Digite primeira string: ");
   scanf(" %[^\n]", str_cat1);
@@ -19,6 +20,7 @@ int main() {
   printf("Digite segunda string: ");
   scanf(" %[^\n]", str_cat2);
   getchar();
+  
   i = (int)strlen(str_cat1);
 
   strcpy(str1, str_cat1);
@@ -32,7 +34,8 @@ int main() {
   }
   str1[i+j]='\0';
 
-
   printf("string usando strcat: %s\n", str_cat1);
   printf("nome completo sem usar strcat: %s\n", str1);
+
+  return 0;
 }

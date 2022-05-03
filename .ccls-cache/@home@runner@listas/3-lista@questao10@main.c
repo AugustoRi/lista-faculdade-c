@@ -1,6 +1,8 @@
 /*
-10. Fa ̧ca um programa que gere uma matriz bidimensional com elementos aleat ́orios e receba do usu ́ario
-um valor inteiro x. O programa deve informar quantas vezes x aparece na matriz gerada.
+//1. Diga a ordem de cálculo dos operadores em cada uma das instruções em C a seguir
+10. Faça um programa que gere uma matriz bidimensional com elementos aleatórios
+e receba do usuário um valor inteiro x. 
+O programa deve informar quantas vezes x aparece na matriz gerada.
 */
 
 #include <stdio.h>
@@ -19,6 +21,7 @@ int main() {
       v[i][j] = rand() % 100;
     }
   }
+  
   printf("Informe o valor x para verificar: ");
   scanf("%d", &x);
 
@@ -37,4 +40,6 @@ int main() {
   }
 
   printf("Portanto, o x aparece %d vezes.\n", count);
+
+  return 0;
 }

@@ -1,5 +1,6 @@
 /*
-1. Fa ̧ca um programa em C que leia um vetor do tipo float com 15 elementos e apresente a soma do menor e maior elemento do vetor fornecido.
+1. Faça um programa em C que leia um vetor do tipo float com 15 elementos
+e apresente a soma do menor e maior elemento do vetor fornecido.
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,7 +11,6 @@
 float random_float() {
   return ( ( (float)rand() ) / (float)RAND_MAX ) * 5;
 }
-
 
 void imprimir_vetor(float v[], int length);
 

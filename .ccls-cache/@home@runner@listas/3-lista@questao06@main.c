@@ -1,6 +1,8 @@
 /*
-6. Fa ̧ca um programa em C que leia uma string do usu ́ario e a apresente na forma inversa.
+6. Faça um programa em C que leia uma string do usuário
+e a apresente na forma inversa.
 */
+
 #include <stdio.h>
 #include <string.h>
 #define QTDE 50
@@ -10,8 +12,6 @@ int main () {
 
   printf("Insira a string: \n");
   scanf(" %[^\n]", string);
-
-  //printf("size %d", (int)strlen(string));
 
   puts("===================");
   printf("A string fornecida foi: %s\n", string);

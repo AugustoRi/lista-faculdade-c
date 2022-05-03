@@ -24,6 +24,18 @@ int main() {
   (!iguais_cmp)?printf("Strings iguais.\n"):printf("Strings diferentes.\n");
 
   //versao sem utilizar strcmp
+  if (strlen(str1) == strlen(str2)) {
+    for (int i = 0; i < strlen(str1) - 1; i++){
+      if (str1[i] != str2[i]) {
+        iguais = 0;
+        break;
+      }
+      iguais = 1;
+    }
+  } 
+
+  puts("Resultado sem usar strcmp()");
+  (!iguais)?printf("Strings iguais.\n"):printf("Strings diferentes.\n");
   
   
 }
